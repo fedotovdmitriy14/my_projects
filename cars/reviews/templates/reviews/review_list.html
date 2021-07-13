@@ -1,0 +1,21 @@
+{% extends 'mainapp/Mitsubishi_models.html' %}
+{% load static %}
+
+
+{% block awesome %}
+  <div class="features">
+    <h1>Отзывы:</h1><br>
+    {% if reviews %}
+        {% for el in reviews %}
+          <div class="alert alert-warning">
+              <h3>{{ el.author }}</h3>
+              <p>{{ el.score }}</p>
+              <p>{{ el.body }}</p>
+              <a href="{% url 'review-detail' el.id %}" class="btn btn-warning">Читать далее</a>
+          </div>
+        {% endfor %}
+    {% else %}
+      <p>Пока нет отзывов</p>
+    {% endif %}
+  </div>
+{% endblock %}

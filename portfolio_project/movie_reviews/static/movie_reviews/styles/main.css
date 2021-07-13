@@ -1,0 +1,63 @@
+
+body {
+  text-align: center;
+  background-image: url("https://www.iphones.ru/wp-content/uploads/2020/06/orig-1240x630.png");
+}
+
+.buttons {
+    position: relative;
+    top: 20rem;
+    right: 1rem;
+}
+
+.alert {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+h1 {
+    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.list-pages {
+	text-align: center;
+	margin: 0 0 20px 0;
+}
+.list-pages ul {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+.list-pages ul li {
+	display: inline-block;
+	margin: 0 20px 0 0;
+}
+.list-pages a {
+	color: #000;
+	font-size: 24px;
+	text-decoration: none;
+	color: white;
+}
+.list-pages .page-num, .page-num-selected {
+    box-sizing: content-box;
+	display: inline-block;
+	width: 60px;
+	height: 44px;
+	padding: 16px 0 0 0;
+	border: 1px solid #d0d0d0;
+	border-radius: 30px;
+}
+.list-pages .page-num:hover {
+	box-shadow: 3px 3px 1px #d0d0d0;
+}
+.list-pages .page-num-selected {
+	border: none;
+	color: #000;
+	font-size: 20px;
+	color: white;
+}
+.list-pages .page-num-selected:hover {
+	box-shadow: none;
+}

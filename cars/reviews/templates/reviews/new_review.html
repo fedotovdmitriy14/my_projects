@@ -1,0 +1,17 @@
+{% extends 'mainapp/Mitsubishi_models.html' %}
+{% load static %}
+
+
+{% block awesome %}
+  <div class="features">
+    <h1>Форма для отзыва</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.author }}<br>
+      {{ form.score }}<br>
+      {{ form.body }}<br>
+      <span>{{ error }}</span>
+      <button class="btn btn-success" type="submit">Отправить отзыв</button>
+    </form>
+  </div>
+{% endblock %}

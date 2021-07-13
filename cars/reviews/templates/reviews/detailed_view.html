@@ -1,0 +1,14 @@
+{% extends 'mainapp/Mitsubishi_models.html' %}
+{% load static %}
+
+{% block title %}{{ review.author }}{% endblock %}
+
+{% block awesome %}
+  <div class="features">
+      <h1>{{ review.score }}</h1>
+      <p>{{ review.author }}</p>
+      <p>{{ review.body }}</p>
+      <a href="{% url 'review-update' review.id %}" class="btn btn-info">Редактировать</a>
+      <a href="{% url 'review-delete' review.id %}" class="btn btn-danger">Удалить</a>
+  </div>
+{% endblock %}

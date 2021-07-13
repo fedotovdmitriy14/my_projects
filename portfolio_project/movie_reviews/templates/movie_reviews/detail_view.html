@@ -1,0 +1,14 @@
+{% extends 'movie_reviews/review_list.html' %}
+{%  load static %}
+
+{% block content %}
+    <div class="alert alert-warning">
+        <h3>{{ movie.film_name.film_name }}</h3>
+        <h5>{{ movie.name }}</h5>
+        <p>{{ movie.score }}</p>
+        <p>{{ movie.text }}</p>
+        <a class="btn btn-warning" href="{% url 'update' movie.id %}">Редактировать</a>
+        <a class="btn btn-warning" href="{% url 'delete' movie.id %}">Удалить</a>
+    </div>
+{% endblock %}
+

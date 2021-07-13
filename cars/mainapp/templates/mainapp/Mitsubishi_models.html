@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href={% static 'mainapp/css/my_styles.css' %}>
+    <link rel="icon" href='static/base/icons/favicon.ico'>
+    <script src="https://kit.fontawesome.com/059114e171.js" crossorigin="anonymous"></script>
+    {% block title %}Главная страница{% endblock %}
+</head>
+<body>
+    <aside>
+        <img src="{% static 'mainapp/img/img.png' %}" alt="Mitsubishi_logo">
+        <span class="logo">Mitsubishi</span>
+        <h3>Навигация</h3>
+        <ul>
+            <a href="{% url 'menu' %}"><li><i class="fas fa-home"></i> Главная</li></a>
+            <a href="{% url 'models' %}"><li><i class="fas fa-car"></i> Модели</li></a>
+            <a href="{% url 'list_of_reviews' %}"><li><i class="fas fa-car"></i> Отзывы</li></a>
+            <a href=""><li><i class="fas fa-address-card"></i> Почему не X-trail</li></a>
+            <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i> Добавить отзыв</button></li></a>
+        </ul>
+    </aside>
+    <main>
+        {% block awesome %}
+            <div class="features">
+                <h1>Главная страница</h1>
+                <p>Hello!</p>
+                <button class="btn btn-warning">На страницу</button>
+            </div>
+        {% endblock %}
+    </main>
+</body>
+</html>

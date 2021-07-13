@@ -1,0 +1,19 @@
+{% extends 'movie_reviews/new_review.html' %}
+{% load static %}
+
+{% block form %}
+
+<form class="form-signin" method="POST">
+  <h1 class="h3 mb-3 font-weight-normal">Регистрация</h1>
+  {% csrf_token %}
+<!--  {% for f in form %}-->
+<!--  <p><label class="form-label" for="{{ f.id_for_label }}">{{ f.label }}: </label>{{ f }}</p>-->
+<!--  {% endfor %}-->
+
+  {{ form.as_p }}
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Отправить</button>
+</form>
+
+
+{% endblock %}
