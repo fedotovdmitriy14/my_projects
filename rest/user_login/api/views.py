@@ -39,7 +39,7 @@ def register(request):
             data = serializer.errors
 
 
-        return Response(data)
+        return Response(data, status=status.HTTP_201_CREATED)
 
 @api_view(['POST',])
 def logout_view(request):
