@@ -1,0 +1,416 @@
+
+body {
+    color: white;
+    font-size: 15px;
+    margin: 0;
+    font-size: 18px;;
+}
+
+* {
+    box-sizing: border-box;         
+}
+
+a {
+    text-decoration: none;
+}
+
+/* как я добился того, чтобы картинка не съезжала: */
+/* добавил height для блока */
+
+.content{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1300px;
+    height: 100vh;
+}
+
+
+/* header */
+
+/* как я добился того, чтобы картинка не съезжала: */
+/* background-position: center */
+
+header {
+    background-image: url('../images/desktop/image-header.jpg');
+    padding-top: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+}
+
+.nav-item {
+    margin-left: 20px;
+    
+}
+
+/* !important ставит приоритет */
+
+.nav-link {
+    color: #fff !important;
+    font-family: Barlow;
+    font-weight: 500 !important;
+    font-family: Fraunces !important;
+    font-weight: 500 !important;
+}
+
+
+
+.btn-dec {
+    border-radius: 50px;
+    color: white;
+    background-color: lightgray;
+}
+
+.btn-dec:hover {
+    background-color: white;
+    color: black !important;
+}
+
+.heading {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    text-align: center;
+    position: relative;
+    top: 10%;
+    letter-spacing: 0.5rem;
+}
+
+.arrow {
+    margin-top: 5%;
+}
+
+.heading h1 {
+    font-family: Fraunces;
+    font-weight: 900;
+    /* font-stretch: expanded; */
+}
+
+/* main */
+
+.main {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    color: black;
+}
+
+.main h1 {
+    font-family: Fraunces;
+    font-weight: 900;
+    /* margin-bottom: 5%; */
+}
+
+.main p {
+    font-family: Fraunces;
+    line-height: 2;
+}
+
+
+/* поменял margin на padding */
+
+.box1 {
+    /* padding: 10% 10%; */
+    flex: 1;
+    width: 100%;
+}
+
+.box1 h1, .box1 button {
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-right: 10%; 
+    margin-bottom: 5%; 
+}
+
+.box1 button {
+    margin-top: 5%;
+}
+
+.box1 p {
+    margin: 0 10%;
+}
+
+
+.box2 img {
+    height: 100%;
+    width: 100%;
+}
+
+.box2 {
+    flex: 1;
+}
+
+button {
+    font-family: Barlow;
+    font-weight: 900;
+}
+
+
+
+/* main2 */
+
+
+.main2 {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    color: black;
+}
+
+.main2 h1 {
+    font-family: Fraunces;
+    font-weight: 900;
+}
+
+.main2 p {
+    font-family: Fraunces;
+    line-height: 2;
+}
+
+
+.box4 {
+    flex: 1;
+}
+
+.box4 h1, .box4 button {
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-right: 10%; 
+    margin-bottom: 5%; 
+}
+
+.box4 button {
+    margin-top: 5%;
+}
+
+.box4 p {
+    margin: 0 10%;
+}
+
+
+.box3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.box3 {
+    flex: 1;
+}
+
+button {
+    font-family: Barlow;
+    font-weight: 900;
+}
+
+.main3 {
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+}
+
+.box5 {
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    text-align: center;
+    color: hsl(167, 40%, 24%);
+}
+
+.main3 h1 {
+    font-family: Fraunces;
+    font-weight: 900;
+    padding-top: 55%;
+}
+
+.main3 h5 {
+    font-family: Fraunces;
+    font-weight: 300;
+    padding: 3% 20% 5% 20%;
+    line-height: 1.5;
+}
+
+
+.box6 {
+    background-image: url("../images/desktop/image-photography.jpg");
+    background-position: center;
+    flex: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    text-align: center;
+    color: hsl(198, 62%, 26%);
+}
+
+/* testimonials */
+
+.testimonials-header {
+    color: hsl(210, 4%, 67%);
+    text-align: center;
+    align-content: center;
+    font-family: Fraunces;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    margin: 10% auto;
+}
+
+
+.testimonials-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    /* align-items: stretch; */
+    color: black;
+    padding: 5%;
+    text-align: center;
+    align-items: stretch;
+    font-family: Fraunces;
+}
+
+.testimonials-main img {
+    border-radius: 50%;
+    padding: 5% auto;
+}
+
+.testimonials-main div {
+    /* border: solid 2px; */
+    width: 30%;
+}
+
+.testimonials-main .name {
+    margin-top: 15%;
+}
+
+.testimonials-main .feedback {
+    margin-top: 15%;
+}
+
+.testimonials-main .feedback, p {
+    line-height: 1.5;
+    color: hsl(210, 4%, 67%);
+}
+
+.testimonials-main .name {
+    font-weight: 900;
+}
+
+/* pics */
+
+.pics {
+    display: flex;
+}
+
+.pics img {
+    width: 100%;
+}
+
+/* footer */
+
+.footer {
+    font-family: Fraunces;
+    font-weight: 900;
+    background-color: hsl(168, 34%, 41%);
+    text-align: center;
+    color: hsl(167, 40%, 24%);
+}
+
+.footer .container-fluid {
+    padding: 4% 15%;
+}
+
+.container-fluid i {
+    padding: 0 4%;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+
+.footer-logo {
+    margin-top: 4%;
+    width: 15%;
+}
+
+.footer img {
+    padding: 0 2%;
+}
+
+
+
+
+
+
+
+@media (max-width: 930px) {
+
+    body {
+        width: 100vw;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    /* Вот как я решил проблему с вылетом картинки за пределы экрана: */
+
+    .box2 img {
+        width: 100%;
+    }
+
+    .main2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box3 img {
+        width: 100%;
+    }
+
+    .main3 {
+        flex-direction: column;
+    }
+
+    .main3 h5 {
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-bottom: 10%;;
+    }
+    
+    .box5, .box6 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .testimonials-header {
+        max-width: 100%;
+    }
+
+    .testimonials-main {
+        flex-direction: column;
+    }
+
+    .testimonials-main div {
+        width: 100%;
+        margin-top: 15%;
+    }
+
+    .pics {
+        flex-wrap: wrap;
+    }
+
+    .pics div {
+        width: 50%;
+    }
+
+    .footer-logo {
+        width: 30%;
+    }
+
+}
+
+
