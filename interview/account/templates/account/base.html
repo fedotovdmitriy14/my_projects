@@ -24,9 +24,11 @@
         </a>
 
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          {% for el in accounts %}
+          <div id="accounts">
+            {% for el in accounts %}
             <a class="dropdown-item" href=#>{{ el.name }}</a>
           {% endfor %}
+          </div>
 
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href=#>Домой</a>
@@ -58,9 +60,15 @@
                 name:$("#name").val(),
                 csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
             },
-            success:function(){
+            success: function(data) {
+                  var accounts = document.getElementById("accounts");
+                  var newAccount = document.createElement('a');
+                  newAccount.classList.add("dropdown-item");
+                  newAccount.innerText = $("#name").val();
+                  newAccount.href = "#";
+                  accounts.appendChild(newAccount);
                   alert('Saved');
-                    }
+                  }
             })
         });
     </script>
