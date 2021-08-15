@@ -1,13 +1,3 @@
-restAPI
-sunny
-express
-parser
-.idea
-
-
-
-
-
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,django
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,django
@@ -225,4 +215,3 @@ cython_debug/
 # Cython debug symbols
 
 # End of https://www.toptal.com/developers/gitignore/api/python,django
-
